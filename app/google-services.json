@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742482523617",
+    "firebase_url": "https://hello-doctor-24571-default-rtdb.firebaseio.com",
+    "project_id": "hello-doctor-24571",
+    "storage_bucket": "hello-doctor-24571.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742482523617:android:590f443b8891742aa2cea0",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742482523617-3n4b03l8330ffu7jc43ce30653fhd0j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLKvAymkrZC1Ztoru9TpLtiPNcy1ipK9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742482523617-3n4b03l8330ffu7jc43ce30653fhd0j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

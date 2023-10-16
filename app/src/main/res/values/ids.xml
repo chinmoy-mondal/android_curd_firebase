@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nameContainer" type="id" />
+    <item name="etEmpSalary" type="id" />
+    <item name="etEmpNameL" type="id" />
+    <item name="etEmpAgeL" type="id" />
+    <item name="etEmpSalaryL" type="id" />
+</resources>
