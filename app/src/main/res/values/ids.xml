@@ -5,4 +5,5 @@
     <item name="etEmpNameL" type="id" />
     <item name="etEmpAgeL" type="id" />
     <item name="etEmpSalaryL" type="id" />
+    <item name="tvEmpSalary" type="id" />
 </resources>

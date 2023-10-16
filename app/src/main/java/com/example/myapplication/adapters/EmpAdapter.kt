@@ -10,9 +10,18 @@ import com.example.myapplication.models.EmployeeModel
 
 class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
     RecyclerView.Adapter<EmpAdapter.ViewHolder>() {
+    private lateinit var mListener:onItemClickListener
+
+    interface onItemClickListener{
+        fun onItemClickListener(position: Int)
+    }
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        mListener = clickListener
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmpAdapter.ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.emp_list_item,parent,false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView,mListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -24,8 +33,13 @@ class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
         return empList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
         val tvEmpName: TextView = itemView.findViewById(R.id.tvEmpName)
+        init {
+            itemView.setOnClickListener {
+                clickListener.onItemClickListener(adapterPosition)
+            }
+        }
     }
 
 }
