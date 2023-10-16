@@ -2,9 +2,7 @@ package com.example.myapplication.activities
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Filter
 import android.widget.TextView
-import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
